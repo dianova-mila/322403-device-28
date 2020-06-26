@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Мила Дианова](https://up.htmlacademy.ru/htmlcss/28/user/322403).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Шашева](https://htmlacademy.ru/profile/loyso).
 
 ---
 
