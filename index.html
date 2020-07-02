@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <title>Device</title>
 
-  <!--  Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -17,7 +15,7 @@
   <header class="header">
     <a class="header__logo"><img src="img/header/logo-device.svg" width="163" height="35" alt="Device"></a>
 
-    <form action="get" class="header-search">
+    <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
       <label for="search-field">Поиск по сайту</label>
       <input type="text" name="search" id="search-field">
       <button type="submit" class="header-search__button ">Найти</button>
@@ -138,49 +136,37 @@
       <ul class="basic-list">
         <li class="popular__item">
           <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-1.svg" width="97" height="55" alt="Изображение">
-            </div>
+            <div class="popular__picture popular__picture_1"></div>
             Виртуальная реальность
           </a>
         </li>
         <li class="popular__item">
-          <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-2.svg" width="86" height="117" alt="Изображение">
-            </div>
+          <a href="catalog.html" class="popular__link">
+            <div class="popular__picture popular__picture_2"></div>
             Моноподы для селфи
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-3.svg" width="71" height="87" alt="Изображение">
-            </div>
+            <div class="popular__picture popular__picture_3"></div>
             Экшн-камеры
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-4.svg" width="107" height="65" alt="Изображение">
-            </div>
+            <div class="popular__picture popular__picture_4"></div>
             Фитнес-браслеты
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-5.svg" width="56" height="98" alt="Изображение">
-            </div>
+            <div class="popular__picture popular__picture_5"></div>
             Умные часы
           </a>
         </li>
         <li class="popular__item">
           <a href="#" class="popular__link">
-            <div class="popular__wrapper">
-              <img class="popular__img" src="img/popular/popular-6.svg" width="" height="" alt="Изображение">
-            </div>
+            <div class="popular__picture popular__picture_6"></div>
             Квадрокоптеры
           </a>
         </li>
@@ -192,9 +178,9 @@
       <h2 class="visually-hidden">Наши сервисы</h2>
 
       <ul class="basic-list services__controls">
-        <li><button type="button" class="services__button services__button_active">Доставка</button></li>
-        <li><button type="button" class="services__button">Гарантия</button></li>
-        <li><button type="button" class="services__button">Кредит</button></li>
+        <li><button type="button" class="button button_active services__button">Доставка</button></li>
+        <li><button type="button" class="button services__button">Гарантия</button></li>
+        <li><button type="button" class="button services__button">Кредит</button></li>
       </ul>
 
       <article class="services__item">
@@ -229,11 +215,18 @@
     <section class="partners">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="basic-list partners__list">
-        <li><a href="#" class="partners__link partners__link_dji"><span class="visually-hidden">Dji</span></a></li>
-        <li><a href="#" class="partners__link partners__link_spgadgets"><span
-              class="visually-hidden">Sp.Gadgets</span></a></li>
-        <li><a href="#" class="partners__link partners__link_gopro"><span class="visually-hidden">GoPro</span></a></li>
-        <li><a href="#" class="partners__link partners__link_vive"><span class="visually-hidden">Vive</span></a></li>
+        <li><a href="#" class="partners__link partners__link_dji">
+          <img src="img/partners/dji-grey.png" width="260" height="100" alt="dji">
+        </a></li>
+        <li><a href="#" class="partners__link partners__link_spgadgets">
+          <img src="img/partners/spgadgets-grey.png" width="260" height="100" alt="spgadgets">
+        </a></li>
+        <li><a href="#" class="partners__link partners__link_gopro">
+          <img src="img/partners/gopro-grey.png" width="260" height="100" alt="gopro">
+        </a></li>
+        <li><a href="#" class="partners__link partners__link_vive">
+          <img src="img/partners/vive-grey.png" width="260" height="100" alt="vive">
+        </a></li>
       </ul>
     </section>
     <!-- /.partners -->
@@ -277,15 +270,15 @@
     <ul class="basic-list footer-actions">
       <li class="footer-actions__item">
         <a href="#"
-          class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_signin">Войти</a>
+          class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_signin">Войти</a>
       </li>
       <li class="footer-actions__item">
         <a href="#"
-          class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_compare">Сравнить</a>
+          class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_compare">Сравнить</a>
       </li>
       <li class="footer-actions__item">
         <a href="#"
-          class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_basket">Корзина</a>
+          class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_basket">Корзина</a>
       </li>
     </ul>
 
@@ -293,22 +286,22 @@
 
     <ul class="basic-list footer-nav">
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Доставка</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Доставка</a>
       </li>
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Гарантия</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Гарантия</a>
       </li>
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Контакты</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Контакты</a>
       </li>
     </ul>
 
-    <p class="footer-tel">Тел.: <a class="footer-tel_link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+    <p class="footer-tel">Тел.: <a class="footer-tel__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 
     <ul class="basic-list footer-socials">
       <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Facebook</span></a></li>
-      <li><a href="#" class="footer-socials__link"><span class="visually-hidden>Instagram</span></a></li>
-      <li><a href=" #" class="footer-socials__link"><span class="visually-hidden>Twitter</span></a></li>
+      <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Instagram</span></a></li>
+      <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
 
     <a href=" https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">

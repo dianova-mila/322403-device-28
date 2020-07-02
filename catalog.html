@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <title>Моноподы для селфи</title>
 
-  <!--  Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -106,31 +103,31 @@
           </label>
           <ul class="basic-list filter__list">
             <li>
-              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="black" id="black-field" checked>
+              <input class="visually-hidden filter__input" type="checkbox" name="black" id="black-field" checked>
               <label class="filter__label filter__label_checkbox" for="black-field">
                 Чёрный
               </label>
             </li>
             <li>
-              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="white" id="white-field">
+              <input class="visually-hidden filter__input" type="checkbox" name="white" id="white-field">
               <label class="filter__label filter__label_checkbox" for="white-field">
                 Белый
               </label>
             </li>
             <li>
-              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="blue" id="blue-field" checked>
+              <input class="visually-hidden filter__input" type="checkbox" name="blue" id="blue-field" checked>
               <label class="filter__label filter__label_checkbox" for="blue-field">
                 Синий
               </label>
             </li>
             <li>
-              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="red" id="red-field" checked>
+              <input class="visually-hidden filter__input" type="checkbox" name="red" id="red-field" checked>
               <label class="filter__label filter__label_checkbox" for="red-field">
                 Красный
               </label>
             </li>
             <li>
-              <input class="visually-hidden filter-checkbox__input" type="checkbox" name="pink" id="pink-field">
+              <input class="visually-hidden filter__input" type="checkbox" name="pink" id="pink-field">
               <label class="filter__label filter__label_checkbox" for="pink-field">
                 Розовый
               </label>
@@ -144,14 +141,14 @@
           </label>
           <ul class="basic-list filter__list">
             <li>
-              <input class="visually-hidden filter-radio__input" type="radio" name="filter-bluetooth" value="1"
+              <input class="visually-hidden filter__input" type="radio" name="filter-bluetooth" value="1"
                 id="filter-yes" checked>
               <label class="filter__label filter__label_radio" for="filter-yes">
                 Есть
               </label>
             </li>
             <li>
-              <input class="visually-hidden filter-radio__input" type="radio" name="filter-bluetooth" value="0"
+              <input class="visually-hidden filter__input" type="radio" name="filter-bluetooth" value="0"
                 id="filter-no">
               <label class="filter__label filter__label_radio" for="filter-no">
                 Нет
@@ -184,8 +181,8 @@
           <p class="catalog__price">
             500 руб.
           </p>
-          <button type="button" class="button catalog__button">В корзину</button>
-          <button type="button" class="catalog__link">Добавить к сравнению</button>
+          <a href="#" class="button catalog__button">В корзину</a>
+          <a href="#" class="catalog__link">Добавить к сравнению</a>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/item-2.jpg" width="360" height="380" alt="Фото товара">
@@ -195,8 +192,8 @@
           <p class="catalog__price">
             1 500 руб.
           </p>
-          <button type="button" class="button catalog__button">В корзину</button>
-          <button type="button" class="catalog__link">Добавить к сравнению</button>
+          <a href="#" class="button catalog__button">В корзину</a>
+          <a href="#" class="catalog__link">Добавить к сравнению</a>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/item-3.jpg" width="360" height="380" alt="Фото товара">
@@ -206,8 +203,8 @@
           <p class="catalog__price">
             2 500 руб.
           </p>
-          <button type="button" class="button catalog__button">В корзину</button>
-          <button type="button" class="catalog__link">Добавить к сравнению</button>
+          <a href="#" class="button catalog__button">В корзину</a>
+          <a href="#" class="catalog__link">Добавить к сравнению</a>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/item-4.jpg" width="360" height="380" alt="Фото товара">
@@ -217,8 +214,8 @@
           <p class="catalog__price">
             4 900 руб.
           </p>
-          <button type="button" class="button catalog__button">В корзину</button>
-          <button type="button" class="catalog__link">Добавить к сравнению</button>
+          <a href="#" class="button catalog__button">В корзину</a>
+          <a href="#" class="catalog__link">Добавить к сравнению</a>
         </li>
       </ul>
 
@@ -237,18 +234,18 @@
   <!-- .main -->
 
   <footer class="footer">
-    <a class="footer__logo"><img src="img/footer/logo.svg" width="163" height="35 alt="Device"></a>
+    <a href="index.html" class="footer__logo"><img src="img/footer/logo.svg" width="163" height="35" alt="Device"></a>
 
     <ul class="basic-list footer-actions">
       <li class="footer-actions__item">
-        <a href="#" class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_name">Валентин Петухов</a>
-        <a href="#" class="basic-link_theme_dark basic-link_theme_dark_signout">Выйти</a>
+        <a href="#" class="basic-link basic-link_theme_dark basic-link_icon basic-link_icon_name">Валентин Петухов</a>
+        <a href="#" class="basic-link basic-link_theme_dark basic-link_signout">Выйти</a>
       </li>
       <li class="footer-actions__item">
-        <a href="#" class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_compare">Сравнить</a>
+        <a href="#" class="basic-link basic-link_theme_dark basic-link_icon basic-link_icon_compare">Сравнить</a>
       </li>
       <li class="footer-actions__item">
-        <a href="#" class="basic-link_theme_dark basic-link_theme_dark_icon  basic-link_theme_dark_icon_basket">Корзина</a>
+        <a href="#" class="basic-link basic-link_theme_dark basic-link_icon basic-link_icon_basket">Корзина</a>
       </li>
     </ul>
 
@@ -256,22 +253,22 @@
 
     <ul class="basic-list footer-nav">
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Доставка</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Доставка</a>
       </li>
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Гарантия</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Гарантия</a>
       </li>
       <li>
-        <a href="#" class="basic-link_theme_dark footer-nav__link">Контакты</a>
+        <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Контакты</a>
       </li>
     </ul>
 
-    <p class="footer-tel">Тел.: <a class="footer-tel_link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+    <p class="footer-tel">Тел.: <a class="footer-tel__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 
     <ul class="basic-list footer-socials">
-      <li><a href="#" class="footer-socials__link"><span>Facebook</span></a></li>
-      <li><a href="#" class="footer-socials__link"><span>Instagram</span></a></li>
-      <li><a href="#" class="footer-socials__link"><span>Twitter</span></a></li>
+      <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Facebook</span></a></li>
+      <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Instagram</span></a></li>
+      <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
 
     <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">

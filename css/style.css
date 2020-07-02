@@ -14,13 +14,31 @@
 }
 
 @font-face {
-  font-family: "Gilroy Bold";
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
   src: url(../fonts/Gilroy-ExtraBold.woff);
 }
 
 @font-face {
-  font-family: "Gilroy UltraLight";
-  src: url(../fonts/Gilroy-UltraLight.woff);
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Gilroy-Light.woff);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 /* Global */
@@ -87,7 +105,7 @@ img {
 }
 
 .basic-title {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -98,7 +116,7 @@ img {
   border: none;
   display: inline-block;
   background-color: transparent;
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 0.2em;
   font-weight: 800;
   font-size: 18px;
@@ -112,18 +130,46 @@ img {
   z-index: -1;
   display: block;
   position: absolute;
-  width: 220px;
+  width: 100%;
   height: 8px;
   background-color: var(--special-yellow-dark);
 }
 
 .button:focus, .button:hover {
-  background-color: var(--special-yellow-dark);
+  outline: none;
+  cursor: pointer;
+}
+
+.button:focus::before, .button:hover::before {
+  height: 100%;
 }
 
 .button:active {
-  background-color: var(--special-yellow-dark);
+  cursor: pointer;
   color: var(--basic-black-30);
+}
+
+.button:active::before {
+  height: 100%;
+}
+
+.button_active {
+  color: var(--special-yellow);
+}
+
+.button_active::before {
+  background-color: var(--basic-black);
+  height: 100%;
+}
+
+.button_active:focus, .button_active:hover, .button_active:active {
+  cursor: default;
+  color: var(--special-yellow);
+}
+
+.button_active:focus::before, .button_active:hover::before, .button_active:active::before {
+  background-color: var(--basic-black);
+  height: 100%;
 }
 
 .visually-hidden {
@@ -140,7 +186,7 @@ img {
 }
 
 .header-nav__link {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -154,7 +200,7 @@ img {
 }
 
 .slider-table__item {
-  font-family: Gilroy UltraLight, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
@@ -162,7 +208,6 @@ img {
 }
 
 .slider-table__item_value {
-  font-family: Gilroy UltraLight, Arial, sans-serif;
   font-size: 36px;
   line-height: 42px;
 }
@@ -180,29 +225,9 @@ img {
   background-image: url(../img/slider/slider-button.svg);
 }
 
-.catalog__link {
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  color: var(--basic-black);
-  opacity: 50%;
-  border: none;
-  background-color: transparent;
-}
-
-.catalog__link:focus, .catalog__link:hover {
-  cursor: pointer;
-  opacity: 100%;
-}
-
-.catalog__link:active {
-  opacity: 20%;
-}
-
 /* popular */
-.popular__item:focus .popular__wrapper,
-.popular__item:hover .popular__wrapper {
+.popular__item:focus .popular__picture,
+.popular__item:hover .popular__picture {
   background-color: var(--special-yellow-dark);
 }
 
@@ -210,12 +235,12 @@ img {
   color: var(--basic-black-30);
 }
 
-.popular__item:active .popular__img {
+.popular__item:active .popular__picture::before {
   opacity: 30%;
 }
 
 .popular__link {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -223,50 +248,48 @@ img {
   color: var(--basic-black);
 }
 
-.popular__wrapper {
+.popular__picture {
+  position: relative;
   background-color: var(--special-yellow);
   width: 160px;
   height: 160px;
 }
 
-/* services */
-.services__button {
-  font-family: Gilroy Bold;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  border: none;
-  background-color: transparent;
-}
-
-.services__button::before {
+.popular__picture::before {
   content: "";
-  z-index: -1;
   display: block;
   position: absolute;
-  width: 140px;
-  height: 8px;
-  background-color: var(--special-yellow-dark);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.services__button:focus, .services__button:hover {
-  outline: none;
-  background-color: var(--special-yellow-dark);
+.popular__picture_1::before {
+  background-image: url(../img/popular/popular-1.svg);
 }
 
-.services__button:active {
-  outline: none;
-  background-color: var(--basic-black);
-  color: var(--special-yellow);
+.popular__picture_2::before {
+  background-image: url(../img/popular/popular-2.svg);
 }
 
-.services__button_active {
-  background-color: var(--basic-black);
-  color: var(--special-yellow);
+.popular__picture_3::before {
+  background-image: url(../img/popular/popular-3.svg);
 }
 
+.popular__picture_4::before {
+  background-image: url(../img/popular/popular-4.svg);
+}
+
+.popular__picture_5::before {
+  background-image: url(../img/popular/popular-5.svg);
+}
+
+.popular__picture_6::before {
+  background-image: url(../img/popular/popular-6.svg);
+}
+
+/* services */
 .services__text {
   letter-spacing: 0.1em;
 }
@@ -274,37 +297,19 @@ img {
 /* partners */
 .partners__link {
   display: block;
-  height: 100px;
-  width: 260px;
   background-repeat: no-repeat;
-}
-
-.partners__link_dji {
-  background-image: url(../img/partners/dji-grey.png);
 }
 
 .partners__link_dji:focus, .partners__link_dji:hover {
   background-image: url(../img/partners/dji.png);
 }
 
-.partners__link_spgadgets {
-  background-image: url(../img/partners/spgadgets-grey.png);
-}
-
 .partners__link_spgadgets:focus, .partners__link_spgadgets:hover {
   background-image: url(../img/partners/spgadgets.png);
 }
 
-.partners__link_gopro {
-  background-image: url(../img/partners/gopro-grey.png);
-}
-
 .partners__link_gopro:focus, .partners__link_gopro:hover {
   background-image: url(../img/partners/gopro.png);
-}
-
-.partners__link_vive {
-  background-image: url(../img/partners/vive-grey.png);
 }
 
 .partners__link_vive:focus, .partners__link_vive:hover {
@@ -313,7 +318,7 @@ img {
 
 /* info */
 .info__link {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -338,7 +343,7 @@ img {
 }
 
 .footer-nav__link {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -346,7 +351,7 @@ img {
   text-transform: uppercase;
 }
 
-.footer-tel_link {
+.footer-tel__link {
   color: var(--basic-white);
 }
 
@@ -378,7 +383,7 @@ img {
 }
 
 .filter__title {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -391,7 +396,7 @@ img {
 }
 
 .filter__text {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -400,7 +405,7 @@ img {
 
 /* catalog */
 .catalog-sort__title {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -434,7 +439,7 @@ img {
 }
 
 .catalog__text {
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -443,17 +448,34 @@ img {
 }
 
 .catalog__price {
-  font-family: Gilroy UltraLight, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
 }
 
+.catalog__link {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+  opacity: 50%;
+}
+
+.catalog__link:focus, .catalog__link:hover {
+  opacity: 100%;
+}
+
+.catalog__link:active {
+  opacity: 20%;
+}
+
 /* pages */
 .pages {
   background-color: var(--basic-grey-lightest);
-  font-family: Gilroy Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
