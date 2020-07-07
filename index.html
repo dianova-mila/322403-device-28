@@ -18,20 +18,20 @@
       <a class="header__logo"><img src="img/header/logo-device.svg" width="163" height="35" alt="Device"></a>
 
       <div class="grid-row">
-        <form class="col-3" action="https://echo.htmlacademy.ru" method="get" class="header-search">
+        <form class="col-6 header-search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-field">Поиск по сайту</label>
           <input type="text" name="search" id="search-field">
           <button type="submit" class="header-search__button ">Найти</button>
         </form>
 
-        <ul class="basic-list col-3 grid-row header-actions">
-          <li class="col-3 header-actions__item">
+        <ul class="basic-list col-6 grid-row header-actions">
+          <li class="col-6 header-actions__item">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_signin">Войти</a>
           </li>
-          <li class="col-2 header-actions__item">
+          <li class="col-3 header-actions__item">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_compare">Сравнить</a>
           </li>
-          <li class="col-2 header-actions__item">
+          <li class="col-3 header-actions__item">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_basket">Корзина</a>
           </li>
         </ul>
@@ -41,7 +41,7 @@
 
       <nav class="header-nav">
         <ul class="basic-list grid-row">
-          <li class="col-3">
+          <li class="col-6">
             <a href="#" class="basic-link header-nav__link">Каталог товаров</a>
             <ul class="basic-list header-catalog">
               <li class="header-catalog__item"><a href="#" class="basic-link">Виртуальная реальность</a></li>
@@ -52,17 +52,19 @@
               <li class="header-catalog__item"><a href="#" class="basic-link">Квадрокоптер</a></li>
             </ul>
           </li>
-          <ul class="basic-list col-3 grid-row">
-            <li class="col-2">
-              <a href="#" class="basic-link header-nav__link">Доставка</a>
-            </li>
-            <li class="col-2">
-              <a href="#" class="basic-link header-nav__link">Гарантия</a>
-            </li>
-            <li class="col-3">
-              <a href="#" class="basic-link header-nav__link">Контакты</a>
-            </li>
-          </ul>
+          <li class="col-6">
+            <ul class="basic-list grid-row">
+              <li class="col-3">
+                <a href="#" class="basic-link header-nav__link">Доставка</a>
+              </li>
+              <li class="col-3">
+                <a href="#" class="basic-link header-nav__link">Гарантия</a>
+              </li>
+              <li class="col-6">
+                <a href="#" class="basic-link header-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- /.heaver-nav -->
@@ -76,11 +78,11 @@
 
     <section class="container slider">
       <article class="grid-row slider-item slider-item_active">
-        <div class="col-3">
+        <div class="col-6">
           <img src="img/slider/slider-1.png" width="384" height="486" alt="Селфи-палка" class="slider-item__img">
         </div>
 
-        <div class="col-3">
+        <div class="col-6">
           <p class="basic-title slider-item__title">Делай селфи, как Бен Стиллер!</p>
           <p class="slider-item__text">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
@@ -148,32 +150,32 @@
     <section class="container popular">
       <h2 class="visually-hidden">Популярное</h2>
       <ul class="basic-list grid-row">
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="#" class="popular__link popular__link_1">
             Виртуальная реальность
           </a>
         </li>
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="catalog.html" class="popular__link popular__link_2">
             Моноподы для селфи
           </a>
         </li>
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="#" class="popular__link popular__link_3">
             Экшн-камеры
           </a>
         </li>
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="#" class="popular__link  popular__link_4">
             Фитнес-браслеты
           </a>
         </li>
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="#" class="popular__link popular__link_5">
             Умные часы
           </a>
         </li>
-        <li class="col-1 popular__item">
+        <li class="col-2 popular__item">
           <a href="#" class="popular__link popular__link_6">
             Квадрокоптеры
           </a>
@@ -187,13 +189,13 @@
         <h2 class="visually-hidden">Наши сервисы</h2>
 
         <div class="grid-row">
-          <ul class="col-2 basic-list services__controls">
+          <ul class="col-3 basic-list services__controls">
             <li><button type="button" class="button button_active services__button">Доставка</button></li>
             <li><button type="button" class="button services__button">Гарантия</button></li>
             <li><button type="button" class="button services__button">Кредит</button></li>
           </ul>
 
-          <article class="col-4 services__item services__item_active">
+          <article class="col-9 services__item services__item_active">
             <h3 class="basic-title services__title">Доставка</h3>
             <p class="services__text">
               Мы с удовольствием доставим ваш товар прямо к вашему
@@ -202,7 +204,7 @@
             </p>
           </article>
 
-          <article class="col-4 services__item">
+          <article class="col-9 services__item">
             <h3 class="basic-title services__title">Гарантия</h3>
             <p class="services__text">
               Если из-за возгорания купленного у нас товара у вас сгорит дом —
@@ -211,7 +213,7 @@
             </p>
           </article>
 
-          <article class="col-4 services__item">
+          <article class="col-9 services__item">
             <h3 class="basic-title services__title">Кредит</h3>
             <p class="services__text">
               Залезть в долговую яму стало проще! Кредитные консультанты
@@ -227,25 +229,25 @@
     <section class="container partners">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="grid-row basic-list partners__list">
-        <li class="col-2">
+        <li class="col-3">
           <a href="#" class="partners__link">
             <img class="partners__img partners__img_dji" src="img/partners/dji-grey.png" width="260" height="100"
               alt="dji">
           </a>
         </li>
-        <li class="col-2">
+        <li class="col-3">
           <a href="#" class="partners__link">
             <img class="partners__img partners__img_spgadgets" src="img/partners/spgadgets-grey.png" width="260"
               height="100" alt="spgadgets">
           </a>
         </li>
-        <li class="col-2">
+        <li class="col-3">
           <a href="#" class="partners__link">
             <img class="partners__img partners__img_gopro" src="img/partners/gopro-grey.png" width="260" height="100"
               alt="gopro">
           </a>
         </li>
-        <li class="col-2">
+        <li class="col-3">
           <a href="#" class="partners__link">
             <img class="partners__img partners__img_vive" src="img/partners/vive-grey.png" width="260" height="100"
               alt="vive">
@@ -258,7 +260,7 @@
     <div class="container">
       <div class="grid-row">
 
-        <section class="col-3 info">
+        <section class="col-6 info">
           <h2 class="basic-title info__title">О нас</h2>
           <p class="info__text">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -276,7 +278,7 @@
         </section>
         <!-- /.info -->
 
-        <section class="col-3 contacts">
+        <section class="col-6 contacts">
           <h2 class="basic-title contacts__title">Контакты</h2>
           <p class="contacts_text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
@@ -294,52 +296,54 @@
   <!-- /.main -->
 
 
-  <footer class="container footer">
-    <div class="grid-row">
-      <a class="col-3 footer__logo"><img src="img/footer/logo.svg" width="163" height="35" alt="Device"></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-row">
+        <a class="col-6 footer__logo"><img src="img/footer/logo.svg" width="163" height="35" alt="Device"></a>
 
-      <ul class="basic-list col-3 footer-actions">
-        <li class="footer-actions__item">
-          <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_signin">Войти</a>
-        </li>
-        <li class="footer-actions__item">
-          <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_compare">Сравнить</a>
-        </li>
-        <li class="footer-actions__item">
-          <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_basket">Корзина</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="basic-list col-6 footer-actions">
+          <li class="footer-actions__item">
+            <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_signin">Войти</a>
+          </li>
+          <li class="footer-actions__item">
+            <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_compare">Сравнить</a>
+          </li>
+          <li class="footer-actions__item">
+            <a href="#" class="basic-link basic-link_theme_dark basic-link_icon  basic-link_icon_basket">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="grid-row">
-      <address class="col-2 footer__address">г. Москва, ул. Строителей, 15</address>
+      <div class="grid-row">
+        <address class="col-3 footer__address">г. Москва, ул. Строителей, 15</address>
 
-      <ul class="basic-list col-3 footer-nav">
-        <li>
-          <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Доставка</a>
-        </li>
-        <li>
-          <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Гарантия</a>
-        </li>
-        <li>
-          <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Контакты</a>
-        </li>
-      </ul>
+        <ul class="basic-list col-6 footer-nav">
+          <li>
+            <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Доставка</a>
+          </li>
+          <li>
+            <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Гарантия</a>
+          </li>
+          <li>
+            <a href="#" class="basic-link basic-link_theme_dark footer-nav__link">Контакты</a>
+          </li>
+        </ul>
 
-      <p class="col-2 footer-tel">Тел.: <a class="footer-tel__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-    </div>
+        <p class="col-3 footer-tel">Тел.: <a class="footer-tel__link" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+      </div>
 
-    <div class="grid-row">
-      <div class="col-2"></div>
-      <ul class="basic-list col-3 footer-socials">
-        <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Instagram</span></a></li>
-        <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Twitter</span></a></li>
-      </ul>
+      <div class="grid-row">
+        <div class="col-3"></div>
+        <ul class="basic-list col-6 footer-socials">
+          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
 
-      <a href=" https://htmlacademy.ru/intensive/htmlcss" class="col-2 footer__copyright">
-        <img src="img/footer/logo-html.svg" width="27" height="34" alt="Html Academy">
-      </a>
+        <a href=" https://htmlacademy.ru/intensive/htmlcss" class="col-3 footer__copyright">
+          <img src="img/footer/logo-html.svg" width="27" height="34" alt="Html Academy">
+        </a>
+      </div> 
     </div>
   </footer>
   <!-- footer -->
