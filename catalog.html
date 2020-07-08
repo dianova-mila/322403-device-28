@@ -85,11 +85,30 @@
       </ul>
     </div>
 
+    <div class="sort-wrapper">
+      <section class="container sort">
+        <div class="grid-row">
+          <div class="col-4 sort__filter">
+            <h2 class="sort__title">Фильтр:</h2>
+          </div>
+
+          <div class="col-8 sort__sort">
+            <h3 class="sort__title">Сортировка:</h3>
+            <ul class="basic-list sort__list">
+              <li><a class="sort__link sort__link_active">По цене</a></li>
+              <li><a href="#" class="sort__link">По типу</a></li>
+              <li><a href="#" class="sort__link">По популярности</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="сatalog-wrapper">
       <div class="container">
         <div class="grid-row">
           <section class="col-4 filter">
-            <h2 class="filter__title">Фильтр:</h2>
+            <h2 class="visually-hidden">Фильтр:</h2>
 
             <form action="https://echo.htmlacademy.ru" method="get" class="filter__form">
               <fieldset class="filter__item">
@@ -180,14 +199,6 @@
 
           <section class="col-8 catalog">
             <h2 class="visually-hidden">Каталог товаров</h2>
-            <section class="catalog-sort">
-              <h3 class="catalog-sort__title">Сортировка:</h3>
-              <ul class="basic-list catalog-sort__list">
-                <li><a class="catalog-sort__link catalog-sort__link_active">По цене</a></li>
-                <li><a href="#" class="catalog-sort__link">По типу</a></li>
-                <li><a href="#" class="catalog-sort__link">По популярности</a></li>
-              </ul>
-            </section>
 
             <ul class="basic-list grid-row catalog__list">
               <li class="col-6 catalog__item">
