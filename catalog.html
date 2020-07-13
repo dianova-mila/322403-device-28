@@ -18,21 +18,21 @@
           alt="Device"></a>
       <div class="grid-row">
         <form class="col-6 header-search" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-field">Поиск по сайту</label>
-          <input type="text" name="search" id="search-field">
-          <button type="submit" class="header-search__button ">Найти</button>
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+          <input class="header-search__input" type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button type="submit" class="header-search__button">Найти</button>
         </form>
 
         <ul class="basic-list col-6 grid-row  header-actions">
-          <li class="col-6 header-actions__item">
+          <li class="col-6 header-actions__signin">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_signin">Валентин
               Петухов</a>
             <a href="#" class="basic-link basic-link_signout">Выйти</a>
           </li>
-          <li class="col-3 header-actions__item">
+          <li class="col-3 header-actions__compare">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_compare">Сравнить</a>
           </li>
-          <li class="col-3 header-actions__item">
+          <li class="col-3 header-actions__basket">
             <a href="#" class="basic-link basic-link_icon basic-link_icon_basket">Корзина</a>
           </li>
         </ul>
@@ -43,7 +43,7 @@
       <nav class="header-nav">
         <ul class="basic-list grid-row">
           <li class="col-6">
-            <a href="#" class="basic-link header-nav__link">Каталог товаров</a>
+            <a href="#" class="basic-link header-nav__link header-nav__link_catalog">Каталог товаров</a>
             <ul class="basic-list header-catalog">
               <li class="header-catalog__item"><a href="#" class="basic-link">Виртуальная реальность</a></li>
               <li class="header-catalog__item"><a class="basic-link">Моноподы для селфи</a></li>
@@ -59,10 +59,10 @@
                 <a href="#" class="basic-link header-nav__link">Доставка</a>
               </li>
               <li class="col-3">
-                <a href="#" class="basic-link header-nav__link">Гарантия</a>
+                <a href="#" class="basic-link header-nav__link header-nav__link_warranty">Гарантия</a>
               </li>
               <li class="col-6">
-                <a href="#" class="basic-link header-nav__link">Контакты</a>
+                <a href="#" class="basic-link header-nav__link header-nav__link_contacts">Контакты</a>
               </li>
             </ul>
           </li>
@@ -75,7 +75,7 @@
 
 
   <main class="main">
-    <h1 class="container basic-title">Моноподы для селфи</h1>
+    <h1 class="container basic-title catalog-title">Моноподы для селфи</h1>
 
     <div class="container">
       <ul class="basic-list breadcrumbs">
@@ -95,9 +95,9 @@
           <div class="col-8 sort__sort">
             <h3 class="sort__title">Сортировка:</h3>
             <ul class="basic-list sort__list">
-              <li><a class="sort__link sort__link_active">По цене</a></li>
-              <li><a href="#" class="sort__link">По типу</a></li>
-              <li><a href="#" class="sort__link">По популярности</a></li>
+              <li class="sort__item"><a class="sort__link sort__link_active">По цене</a></li>
+              <li class="sort__item"><a href="#" class="sort__link">По типу</a></li>
+              <li class="sort__item"><a href="#" class="sort__link">По популярности</a></li>
             </ul>
           </div>
         </div>
@@ -124,11 +124,15 @@
                     </div>
                   </div>
 
-                  <label class="visually-hidden" for="min-price">от</label>
-                  <input class="filter-price__number" type="text" id="min-price" name="min-price" value="100"> ₽
+                  <div class="fiter-prise__number fiter-prise__number_min">
+                    <label for="min-price">от</label>
+                    <input class="filter-price__value" type="text" id="min-price" name="min-price" value="0">
+                  </div>
 
-                  <label class="visually-hidden" for="max-price">до</label>
-                  <input class="filter-price__number" type="text" id="max-price" name="max-price" value="500"> ₽
+                  <div class="fiter-prise__number fiter-prise__number_max">
+                    <label for="max-price">до</label>
+                    <input class="filter-price__value" type="text" id="max-price" name="max-price" value="5000">
+                  </div>
                 </div>
               </fieldset>
 
@@ -215,7 +219,7 @@
               <li class="col-6 catalog__item">
                 <img class="catalog__img" src="img/catalog/item-2.jpg" width="360" height="380" alt="Фото товара">
                 <a href="#" class="catalog__text">
-                  Профессиональная селфи-палка
+                  Профессиональная<br> селфи-палка
                 </a>
                 <p class="catalog__price">
                   1 500 руб.
@@ -226,7 +230,7 @@
               <li class="col-6 catalog__item">
                 <img class="catalog__img" src="img/catalog/item-3.jpg" width="360" height="380" alt="Фото товара">
                 <a href="#" class="catalog__text">
-                  Непотопляемая селфи-палка
+                  Непотопляемая<br> селфи-палка
                 </a>
                 <p class="catalog__price">
                   2 500 руб.
@@ -305,9 +309,21 @@
       <div class="grid-row">
         <div class="col-3"></div>
         <ul class="basic-list col-6 footer-socials">
-          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Instagram</span></a></li>
-          <li><a href="#" class="footer-socials__link"><span class="visually-hidden">Twitter</span></a></li>
+          <li>
+            <a href="#" class="footer-socials__link footer-socials__link_fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-socials__link footer-socials__link_inst">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-socials__link footer-socials__link_tw">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
         </ul>
 
         <a href=" https://htmlacademy.ru/intensive/htmlcss" class="col-3 footer__copyright">
