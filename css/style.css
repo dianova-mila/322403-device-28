@@ -202,6 +202,7 @@ img {
   z-index: 1;
   border: none;
   display: inline-block;
+  vertical-align: middle;
   background-color: transparent;
   font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 0.2em;
@@ -1012,7 +1013,7 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   background-image: url(../img/modal/modal-close.svg);
-  opacity: 0,5;
+  opacity: 0.5;
 }
 
 .close:focus, .close:hover {
@@ -1110,7 +1111,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 65px;
 }
 
 .footer-socials__link {
@@ -1293,8 +1294,9 @@ img {
   outline: none;
 }
 
-.fiter-prise__number {
+.fiter-price__number {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 23px;
   font-style: normal;
   font-weight: 300;
@@ -1471,6 +1473,7 @@ img {
 
 .sort__button {
   display: inline-block;
+  vertical-align: baseline;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -1725,6 +1728,8 @@ img {
   width: 960px;
   min-height: 550px;
   background-color: var(--basic-white);
+  -webkit-box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
   padding-top: 92px;
   padding-left: 80px;
   padding-bottom: 69px;
@@ -1733,6 +1738,8 @@ img {
 
 .modal_active {
   display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal_error {
@@ -1842,8 +1849,42 @@ img {
   padding-bottom: 9px;
 }
 
-.modal__button::before {
-  top: 16px;
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -2000px);
+            transform: translate(-50%, -2000px);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -700px);
+            transform: translate(-50%, -700px);
+  }
+  70% {
+    -webkit-transform: translate(-50%, -150px);
+            transform: translate(-50%, -150px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -2000px);
+            transform: translate(-50%, -2000px);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -700px);
+            transform: translate(-50%, -700px);
+  }
+  70% {
+    -webkit-transform: translate(-50%, -150px);
+            transform: translate(-50%, -150px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 @-webkit-keyframes shake {
