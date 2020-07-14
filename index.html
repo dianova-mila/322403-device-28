@@ -155,9 +155,9 @@
           </div>
         </article>
         <ul class="basic-list slider-controls">
-          <li><button class="slider-controls__button slider-controls__button_active" type="button"></button></li>
-          <li><button class="slider-controls__button" type="button"></button></li>
-          <li><button class="slider-controls__button" type="button"></button></li>
+          <li><button class="slider-controls__button slider-controls__button_active" type="button" data-slide="1"></button></li>
+          <li><button class="slider-controls__button" type="button" data-slide="2"></button></li>
+          <li><button class="slider-controls__button" type="button" data-slide="3"></button></li>
         </ul>
       </div>
     </section>
@@ -206,34 +206,34 @@
 
         <div class="grid-row">
           <ul class="col-3 basic-list services__controls">
-            <li><button type="button" class="button button_active services__button">Доставка</button></li>
-            <li><button type="button" class="button services__button">Гарантия</button></li>
-            <li><button type="button" class="button services__button">Кредит</button></li>
+            <li><button type="button" class="button button_active services__button" data-slide="1">Доставка</button></li>
+            <li><button type="button" class="button services__button" data-slide="2">Гарантия</button></li>
+            <li><button type="button" class="button services__button" data-slide="3">Кредит</button></li>
           </ul>
 
-          <article class="col-9 services__item services__item_active">
+          <article class="col-9 services__item services__item_delivery services__item_active">
             <h3 class="basic-title services__title">Доставка</h3>
             <p class="services__text">
-              Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно! Ведь мы неплохо
+              Мы с удовольствием доставим ваш товар прямо к вашему<br>
+              подъезду совершенно бесплатно! Ведь мы неплохо<br>
               заработаем, поднимая его на ваш этаж.
             </p>
           </article>
 
-          <article class="col-9 services__item">
+          <article class="col-9 services__item services__item_warranty">
             <h3 class="basic-title services__title">Гарантия</h3>
             <p class="services__text">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом —
-              не переживайте, мы выдадим вам новый.
+              Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
+              не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </p>
           </article>
 
-          <article class="col-9 services__item">
+          <article class="col-9 services__item services__item_credit">
             <h3 class="basic-title services__title">Кредит</h3>
             <p class="services__text">
               Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут для вас наиболее выгодные
+              подберут для вас наиболее выгодные<br>
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </article>
@@ -374,8 +374,7 @@
       </div>
 
       <div class="grid-row footer__links">
-        <div class="col-3"></div>
-        <ul class="basic-list col-6 footer-socials">
+        <ul class="basic-list col-6 col-offset-left-3 footer-socials">
           <li>
             <a href="#" class="footer-socials__link footer-socials__link_fb">
               <span class="visually-hidden">Facebook</span>
@@ -401,6 +400,7 @@
   </footer>
   <!-- footer -->
 
+  <script src="js/script.js"></script>
 
 </body>
 
