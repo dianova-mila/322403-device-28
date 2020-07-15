@@ -6,7 +6,7 @@
   <title>Device</title>
 
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.mini.css">
   <link rel="stylesheet" href="css/style.mini.css">
 </head>
 
@@ -303,7 +303,7 @@
             Всякое
             бывает.
           </p>
-          <a href="#" class="contacts__img"><img src="img/contacts/map.jpg" width="560" height="222"
+          <a href="https://goo.gl/maps/brCVSeq8rPf2gcji7" class="contacts__img"><img src="img/contacts/map.jpg" width="560" height="222"
               alt="улица Строителей, 15"></a>
           <a href="form.html" class="button contacts__button">Напишите нам</a>
         </section>
@@ -315,7 +315,7 @@
       <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.177425326291!2d37.52541266137694!3d55.687445400892805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1594638979246!5m2!1sen!2sru"
         allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <button class="close close_map" type="button"></button>
+      <button class="close close_map" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <section class="modal">
@@ -333,14 +333,14 @@
         </label>
         <button type="submit" class="button modal__button">Отправить</button>
       </form>
-      <button class="close close_modal"></button>
+      <button class="close close_modal" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </main>
   <!-- /.main -->
 
 
-  <footer class="footer">
-    <div class="container">
+  <div class="footer-wrapper">
+    <footer class="container footer">
       <div class="grid-row">
         <a class="col-6 footer__logo"><img src="img/footer/logo.svg" width="163" height="35" alt="Device"></a>
 
@@ -398,8 +398,8 @@
           <img src="img/footer/logo-html.svg" width="27" height="34" alt="Html Academy">
         </a>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <!-- footer -->
 
   <script src="js/script.mini.js"></script>
