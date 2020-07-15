@@ -413,6 +413,7 @@ img {
 
 .header-search:focus-within .header-search__button {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .header-search__input {
@@ -441,6 +442,7 @@ img {
 
 .header-search__input:focus + .header-search__button {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .header-search__button {
@@ -1511,8 +1513,6 @@ img {
 .sort__button {
   display: inline-block;
   vertical-align: baseline;
-  border: none;
-  background-color: transparent;
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -1523,7 +1523,6 @@ img {
 
 .sort__button:hover, .sort__button:focus {
   outline: none;
-  cursor: pointer;
   opacity: 0.4;
 }
 
